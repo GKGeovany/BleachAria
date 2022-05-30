@@ -65,12 +65,25 @@ public class Perso {
 
 	
 //	 vérifie si en dessous du joueur il y a une tuille dont l'id est égal à 102 (air).
-	public boolean estEnLAir() {
-		if (env.idTuile((y.getValue()+16) /16 * 30 + (x.getValue()) / 16) == 102 ) // ne fonctionne que pour cette map
-			return true;
-		else
-			return false ;
-	}
+
+    public boolean estEnLAir() {
+        int getAddress= env.idTuile((y.getValue()+16) /16 * 30 + (x.getValue()) / 16) ;
+        switch (getAddress) {
+        case 102:
+            return true;
+        case 10:
+            return true;
+        case 64:
+            return true;
+        case 65:
+            return true;
+        case 29:
+            return true;
+
+        default:
+            return false;
+        }
+      }
 	
 
 	// Permet d'avoir la position côté modele 
