@@ -17,7 +17,6 @@ public class Perso {
 		this.x = new SimpleIntegerProperty(x);
 		this.y =  new SimpleIntegerProperty(y);
 		this.env=env;
-//		this.estDansLesAir = true;
 	} 
 	
 	public  final int getX() {
@@ -63,27 +62,15 @@ public class Perso {
 		y.setValue(y.getValue()-n);
 	}
 	
+
 	
-	public boolean gravite() {
-		if( this.getY() < env.getHeight()-2)
-			return true;
-		return false;
-	}
-	
-//	 vérifie si en dessous du joueur il y a une tuille dont l'id est égal à 10 (air)
+//	 vérifie si en dessous du joueur il y a une tuille dont l'id est égal à 102 (air).
 	public boolean estEnLAir() {
 		if (env.idTuile((y.getValue()+16) /16 * 30 + (x.getValue()) / 16) == 102 ) // ne fonctionne que pour cette map
-//			this.estDansLesAir = true;
 			return true;
 		else
 			return false ;
 	}
-//	
-//	public boolean retourDansAir() {
-//		return estDansLesAir;
-//	}
-	
-	// 
 	
 
 	// Permet d'avoir la position côté modele 

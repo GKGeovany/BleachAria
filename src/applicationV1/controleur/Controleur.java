@@ -61,7 +61,7 @@ public class Controleur implements Initializable{
 		try {
 			switch (k.getCode()) {
 				case UP	:
-					personnage.setY(personnage.getY()-100);
+					personnage.setY(personnage.getY()-8);
 					break;
 				
 				
