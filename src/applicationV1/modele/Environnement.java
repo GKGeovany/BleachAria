@@ -74,12 +74,12 @@ public class Environnement {
 			e.printStackTrace();
 		}
     }
-//	
+//	Récupère id de la tuile sans liste observable
 //	public int idTuile(int i,int j) {
 //		return map[i][j];
 //	}
 
-	//récupérer
+	//récupère id de la tuile de la liste observable
 	public int idTuile(int indice) {
 		return listeDeTuiles.get(indice);
 	}
@@ -106,32 +106,6 @@ public class Environnement {
 	}
 	
 	
-//	public int positionBloc(int x, int y) {
-//		x = this.personnage.getXProperty().getValue();
-//		y = this.personnage.getYProperty().getValue();
-//		return map[y][x];
-//	}
-//	
-//	public ArrayList<Integer> blocsEntourantPerso(int x,int y, int width, int height){
-//		ArrayList<Integer> listeDesBlocs = new ArrayList<>();
-//		
-//		width = x + 16;
-//		height = y - 16;
-//		
-//		int positionInitialPersonnage = positionBloc(x,y);
-//		int positionBlocADroite = positionBloc(width, y);
-//		int positionBlocEnBas = positionBloc(height, y);
-//		return listeDesBlocs;
-//	}
-//	
-//	public boolean collision(ArrayList<Integer> liste) {
-//		boolean entreEnCollision = false;
-//		for(int i =0; i < liste.size(); i++) {
-//			if(liste.get(i) !=0 )
-//				entreEnCollision = true;
-//		}
-//		return entreEnCollision;
-//	}
 	
 	
 	
